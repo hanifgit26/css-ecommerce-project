@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is an Ecommerce-project project for makeing HANIF-EXPRESS" />
+    <title>Ecommerce-project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+        <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+        <li class="nav__list"><a href="product.html" class="nav__link">Product</a></li>
+        <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+        <li class="nav__list">
+          <a href="profile.html"><img class="profile-icon" src="image/hanifchy.png" alt="hanifchy" /></a>
+        </li>
+      </ul>
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__link nav__brand">Hanif Express</a></li>
+        <li class="nav__list">
+          <a href="card.html" class="nav__link">
+            <span><i class="fa-card-shopping fa-solid"></i></span>Cart 2 products -$ 320.40
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="cart flex-center">
+        <div class="cart__items">
+          <div class="cart__items-heading card">
+            <h1>shoping cart [2 items]</h1>
+            <div class="cart__items__action">
+              <label for="select"> <input type="checkbox" name="select" id="select" />Selecet all items </label>
+              <button class="btn"><i class="fas fa-trash-alt"></i></button>
+              <button class="btn">Shop More</button>
+            </div>
+          </div>
+          <div class="card__item card flex-space-around">
+            <input type="checkbox" name="" id="" />
+            <img src="image/computer.jpeg" alt="hanif" class="cart__item-img" />
+            <div class="cart__item-descriptio">
+              <h3 class="product__name">Computers</h3>
+              <h3 class="product__price">Price : $515.99</h3>
+              <p class="card__item-shepping">Free Shepping</p>
+            </div>
+            <div class="cart__item-actions">
+              <button class="btn"><i class="fas fa-trash-alt"></i></button>
+              <div>
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span>3</span>
+                <button class="btn"><i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__item card flex-space-around">
+            <input type="checkbox" name="" id="" />
+            <img src="image/google nest.jpeg" alt="hanif" class="cart__item-img" />
+            <div class="cart__item-descriptio">
+              <h3 class="product__name">Computers</h3>
+              <h3 class="product__price">Price : $212.99</h3>
+              <p class="card__item-shepping">Free Shepping</p>
+            </div>
+            <div class="cart__item-actions">
+              <button class="btn"><i class="fas fa-trash-alt"></i></button>
+              <div>
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span>3</span>
+                <button class="btn"><i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__payment">
+          <div class="cart__payment-summary card">
+            <h2>Payment Summary</h2>
+            <div>
+              <p>subtotal :</p>
+              <p>$531.44</p>
+            </div>
+            <div>
+              <p>Shiping cost :</p>
+              <p>$2.10</p>
+            </div>
+            <div>
+              <p>Total cost:</p>
+              <p>$533.54</p>
+            </div>
+            <button class="btn cart__payment-btn">Pay Now</button>
+          </div>
+          <div class="cart__payment-methods card">
+            <h2>Payment Method</h2>
+            <div>
+              <i class="fa-brands fa-cc-visa fa-3x"></i>
+              <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+              <i class="fa-brands fa-cc-amex fa-3x"></i>
+              <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+              <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter :</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder=" Your email address" />
+        <button class="btn btn__subscrive">subscribe</button>
+      </div>
+      <div>
+        <p>&copy;Copyright 2023 Hanif Express. All rights rserved</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
